@@ -1,0 +1,9 @@
+# Archivos del sistema y del editor que no forman parte del sitio
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+*.tmp
+~$*
+# Carpeta local de Netlify CLI (si se usa)
+.netlify/

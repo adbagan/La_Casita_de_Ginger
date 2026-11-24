@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de La Casita de Ginger: tortas, galletas, pastelería y preparaciones tradicionales chilenas, con filtros por categoría, precio y etiqueta.">
+  <meta name="author" content="La Casita de Ginger">
+  <meta name="theme-color" content="#482109">
+  <title>Nuestros productos | La Casita de Ginger</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Mountains+of+Christmas:wght@700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Template Agency (Start Bootstrap, licencia MIT): incluye Bootstrap 5.2.3 -->
+  <link rel="stylesheet" href="css/agency.css">
+  <!-- Estilos de La Casita de Ginger (Evaluaciones N°1 y N°2) adaptados al template -->
+  <link rel="stylesheet" href="css/ginger.css">
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/agency.js" defer></script>
+  <script src="js/productos.js" defer></script>
+  <script src="js/catalogo-datos.js" defer></script>
+  <script src="js/almacen-catalogo.js" defer></script>
+  <script src="js/guia-despacho.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body id="page-top" class="pagina-producto">
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===================== MENÚ (navbar del template Agency) ===================== -->
+  <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNav" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand marca" href="index.html#inicio">
+        <img src="img/logo.png" alt="Logo de La Casita de Ginger" width="56" height="56">
+        <span class="marca-texto">
+          <span class="marca-nombre">La Casita de Ginger</span>
+          <span class="marca-lema">Donde la Navidad se vive todo el año</span>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Abrir o cerrar el menú">
+        Menú <span aria-hidden="true">☰</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto py-3 py-xl-0" id="menu-principal">
+            <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#nosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html" aria-current="page">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#testimonios">Testimonios</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#visitanos">Visítanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="cargar-producto.html">Cargar producto</a></li>
+            <li class="nav-item"><a class="nav-link boton-carrito" id="abrir-carrito" href="#carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido" class="page-section seccion pagina-productos">
+    <section id="productos" aria-labelledby="titulo-productos">
+      <div class="container">
+        <nav class="migas" aria-label="Ruta de navegación">
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li aria-current="page">Productos</li>
+          </ol>
+        </nav>
+
+        <header class="seccion-cabecera">
+          <p class="etiqueta">Hecho a mano con cariño</p>
+          <h1 id="titulo-productos" class="section-heading">Nuestros productos</h1>
+          <p>La magia también se disfruta a través del sabor. Descubre nuestras tortas, galletas, pastelería y preparaciones dulces, elaboradas con dedicación para acompañar tus celebraciones, sorprender a quienes quieres o darte un gusto especial.</p>
+          <p>Tenemos delicias para diferentes ocasiones, porque siempre existe una buena razón para compartir algo rico.</p>
+        </header>
+
+        <p class="barra-catalogo">
+          <a class="boton boton-secundario" href="cargar-producto.html">➕ Cargar producto</a>
+        </p>
+
+        <form id="buscador" class="buscador" role="search" aria-label="Buscar productos">
+          <fieldset>
+            <legend>Buscador de productos</legend>
+            <p class="campo">
+              <label for="buscar-texto">Nombre</label>
+              <input type="search" id="buscar-texto" name="texto" placeholder="Ej: galletas">
+            </p>
+            <p class="campo">
+              <label for="buscar-categoria">Categoría</label>
+              <select id="buscar-categoria" name="categoria">
+                <option value="todas">Todas</option>
+                <option value="tortas">Tortas</option>
+                <option value="galletas">Galletas</option>
+                <option value="pasteleria">Pastelería</option>
+                <option value="tradicionales">Tradicionales chilenas</option>
+              </select>
+            </p>
+            <p class="campo">
+              <label for="buscar-precio">Precio</label>
+              <select id="buscar-precio" name="precio">
+                <option value="todos">Todos</option>
+              </select>
+            </p>
+            <p class="campo" id="campo-especial" hidden>
+              <label for="buscar-especial" id="titulo-especial">Filtro de la categoría</label>
+              <select id="buscar-especial" name="especial">
+                <option value="todos">Todos</option>
+              </select>
+            </p>
+            <p class="campo">
+              <label for="buscar-etiqueta">Etiqueta</label>
+              <select id="buscar-etiqueta" name="etiqueta">
+                <option value="todas">Todas</option>
+                <option value="oferta">Ofertas</option>
+                <option value="destacado">Productos destacados</option>
+                <option value="nuevo">Nuevos productos</option>
+              </select>
+            </p>
+            <p class="campo-botones">
+              <button type="submit" class="boton">Buscar</button>
+              <button type="reset" class="boton boton-secundario">Limpiar</button>
+            </p>
+          </fieldset>
+        </form>
+        <p id="resultado-busqueda" class="resultado" aria-live="polite">Cargando productos…</p>
+
+        <section id="catalogo-productos" class="catalogo-productos" aria-label="Catálogo de productos, 8 por página">
+          <h3 class="solo-lectores">Catálogo</h3>
+          <ul id="lista-productos" class="grilla-productos"></ul>
+          <div id="sin-productos" class="sin-productos" role="status" hidden>
+            <p class="sin-productos-titulo">No hay productos</p>
+            <p id="sin-productos-texto">Todavía no hay productos en el catálogo.</p>
+          </div>
+          <noscript><p class="sin-productos">Para ver el catálogo de productos activa JavaScript en tu navegador.</p></noscript>
+          <nav class="paginacion" id="paginacion-productos" aria-label="Páginas del catálogo">
+            <button type="button" id="productos-anterior" aria-label="Página anterior">&larr; Anterior</button>
+            <span id="productos-pagina" aria-live="polite">Página 1 de 1</span>
+            <button type="button" id="productos-siguiente" aria-label="Página siguiente">Siguiente &rarr;</button>
+          </nav>
+        </section>
+        <p class="nota"><small>* Precios referenciales en pesos chilenos (CLP), sujetos a confirmación al momento del pedido.</small></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== MODAL: DETALLE DEL PRODUCTO ===================== -->
+  <div class="modal fade" id="modal-detalle" tabindex="-1" aria-labelledby="md-nombre" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+  <div class="modal-content ventana">
+    <header class="modal-cabecera">
+      <p class="categoria" id="md-categoria">Categoría</p>
+      <button type="button" class="modal-cerrar" id="cerrar-detalle" aria-label="Cerrar detalle" data-bs-dismiss="modal">✕</button>
+    </header>
+    <div class="modal-body p-0">
+    <article class="detalle detalle-modal" id="md-producto">
+      <figure class="detalle-figura">
+        <img id="md-imagen" src="" alt="" width="400" height="300">
+        <figcaption id="md-formato">Formato</figcaption>
+      </figure>
+      <div class="detalle-info">
+        <p class="sellos" id="md-sello-contenedor"><strong id="md-sello" class="sello">Etiqueta</strong></p>
+        <h2 id="md-nombre">Nombre del producto</h2>
+        <p class="precio precio-grande" id="md-precio"></p>
+        <p class="detalle-descripcion" id="md-descripcion"></p>
+        <h3 class="subtitulo">Descripción</h3>
+        <p id="md-texto"></p>
+        <dl class="ficha" id="md-ficha"></dl>
+        <form id="md-form" class="form-agregar">
+          <p class="campo campo-cantidad">
+            <label for="md-cantidad">Cantidad</label>
+            <input type="number" id="md-cantidad" name="cantidad" value="1" min="1" max="20" required>
+          </p>
+          <button type="submit" class="boton">Agregar al carrito</button>
+          <button type="button" class="boton boton-secundario" id="detalle-comentarios" aria-controls="comentarios">💬 Ver comentarios</button>
+        </form>
+        <p id="md-agregado" class="mensaje-ok" role="status" hidden>¡Producto agregado! <a href="#carrito" class="abrir-carrito-enlace">Ver carrito</a></p>
+      </div>
+    </article>
+
+    <!-- Comentarios del producto (matriz 4 x 2 paginada), dentro del mismo modal -->
+    <section id="comentarios" class="bloque-detalle comentarios-modal" aria-labelledby="titulo-comentarios" tabindex="-1">
+      <h2 id="titulo-comentarios" class="section-heading">Comentarios</h2>
+      <p id="sin-comentarios" hidden>Aún no hay comentarios. ¡Sé el primero en comentar!</p>
+      <ol id="lista-comentarios" class="lista-comentarios" aria-label="Comentarios, 8 por página"></ol>
+      <nav class="paginacion" id="paginacion-comentarios" aria-label="Páginas de comentarios">
+        <button type="button" id="comentarios-anterior" aria-label="Comentarios anteriores">&larr; Anterior</button>
+        <span id="comentarios-pagina" aria-live="polite">Página 1 de 1</span>
+        <button type="button" id="comentarios-siguiente" aria-label="Comentarios siguientes">Siguiente &rarr;</button>
+      </nav>
+      <form id="form-comentario" class="formulario tarjeta">
+        <fieldset>
+          <legend>Deja tu comentario</legend>
+          <p class="campo">
+            <label for="comentario-nombre">Nombre</label>
+            <input type="text" id="comentario-nombre" name="nombre" required maxlength="40" autocomplete="name">
+          </p>
+          <p class="campo">
+            <label for="comentario-texto">Comentario</label>
+            <textarea id="comentario-texto" name="comentario" rows="4" cols="40" required maxlength="400"></textarea>
+          </p>
+          <button type="submit" class="boton">Publicar comentario</button>
+        </fieldset>
+      </form>
+    </section>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- ===================== CARRITO ===================== -->
+  <aside id="carrito" class="offcanvas offcanvas-end carrito" tabindex="-1" aria-labelledby="titulo-carrito">
+    <div class="offcanvas-body carrito-panel">
+      <header class="carrito-cabecera">
+        <h2 id="titulo-carrito">🛒 Carrito de compra</h2>
+        <button type="button" class="carrito-cerrar" id="cerrar-carrito" aria-label="Cerrar carrito" data-bs-dismiss="offcanvas">✕</button>
+      </header>
+        <ol class="pasos-pedido" id="pasos-pedido" aria-label="Pasos para solicitar tu pedido">
+          <li class="activo" data-paso="1"><span>1</span> Carrito</li>
+          <li data-paso="2"><span>2</span> Datos de despacho</li>
+          <li data-paso="3"><span>3</span> Envío por WhatsApp</li>
+        </ol>
+      <p id="carrito-vacio">Tu carrito está vacío. Agrega productos desde el <a href="productos.html">catálogo</a>.</p>
+      <table id="tabla-carrito" hidden>
+        <caption>Detalle de tu pedido</caption>
+        <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Subtotal</th>
+            <th scope="col">Acción</th>
+          </tr>
+        </thead>
+        <tbody id="carrito-items"></tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="3">Total</th>
+            <td colspan="2"><strong id="carrito-total">$0</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+      <p class="carrito-acciones">
+        <button type="button" class="boton boton-secundario" id="vaciar-carrito">Vaciar carrito</button>
+        <button type="button" class="boton" id="haz-tu-pedido" aria-controls="form-pedido" aria-expanded="false">Solicitar pedido</button>
+      </p>
+
+      <form id="form-pedido" class="formulario form-pedido" hidden>
+        <fieldset>
+          <legend>Datos para la guía de despacho</legend>
+          <p class="campo">
+            <label for="pedido-nombre">Nombre completo</label>
+            <input type="text" id="pedido-nombre" name="nombre" required maxlength="60" autocomplete="name">
+          </p>
+          <p class="campo">
+            <label for="pedido-telefono">Teléfono</label>
+            <input type="tel" id="pedido-telefono" name="telefono" required maxlength="15" placeholder="+56 9 1234 5678" autocomplete="tel">
+          </p>
+          <p class="campo">
+            <label for="pedido-correo">Correo electrónico</label>
+            <input type="email" id="pedido-correo" name="correo" maxlength="60" autocomplete="email">
+          </p>
+          <fieldset class="opciones">
+            <legend>Tipo de entrega</legend>
+            <label><input type="radio" name="entrega" value="Despacho a domicilio" checked> Despacho a domicilio</label>
+            <label><input type="radio" name="entrega" value="Retiro en el local"> Retiro en el local (Yungay 95)</label>
+          </fieldset>
+          <p class="campo">
+            <label for="pedido-direccion">Dirección de despacho</label>
+            <input type="text" id="pedido-direccion" name="direccion" maxlength="80" placeholder="Calle, número, depto." autocomplete="street-address">
+          </p>
+          <p class="campo">
+            <label for="pedido-comuna">Comuna</label>
+            <select id="pedido-comuna" name="comuna">
+              <option>Chillán</option>
+              <option>Chillán Viejo</option>
+              <option>San Carlos</option>
+              <option>Bulnes</option>
+              <option>Coihueco</option>
+              <option>Pinto</option>
+            </select>
+          </p>
+          <p class="campo">
+            <label for="pedido-fecha">Fecha de entrega</label>
+            <input type="date" id="pedido-fecha" name="fecha" required>
+          </p>
+          <p class="campo">
+            <label for="pedido-horario">Horario</label>
+            <select id="pedido-horario" name="horario">
+              <option>10:00 a 13:00</option>
+              <option>13:00 a 16:00</option>
+              <option>16:00 a 19:00</option>
+            </select>
+          </p>
+          <p class="campo">
+            <label for="pedido-observaciones">Observaciones</label>
+            <textarea id="pedido-observaciones" name="observaciones" rows="3" cols="40" maxlength="200" placeholder="Ej: dedicatoria en la torta, timbre no funciona…"></textarea>
+          </p>
+          <p class="carrito-acciones">
+            <button type="submit" class="boton boton-whatsapp" id="enviar-pedido">Enviar pedido por WhatsApp</button>
+            <button type="button" class="boton boton-secundario" id="cancelar-pedido">Cancelar</button>
+          </p>
+        </fieldset>
+      </form>
+      <p id="mensaje-guia" class="mensaje-ok" role="status" hidden></p>
+      <p class="nota"><small>Al enviar el pedido se descarga la guía de despacho en PDF y se abre WhatsApp con el detalle para coordinar el pago y la entrega. En el celular, la guía se adjunta directamente al compartir por WhatsApp.</small></p>
+    </div>
+  </aside>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="pie">
+    <div class="container pie-grid">
+      <section aria-labelledby="titulo-pie-marca">
+        <h2 id="titulo-pie-marca" class="pie-marca">
+          <img src="img/logo.png" alt="" width="48" height="48"> La Casita de Ginger
+        </h2>
+        <p>Pastelería temática donde la Navidad se vive todo el año.</p>
+      </section>
+      <section aria-labelledby="titulo-redes">
+        <h2 id="titulo-redes">Síguenos en redes sociales</h2>
+        <ul class="redes">
+          <li><a href="https://www.instagram.com/lacasitadeginger_/" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg> Instagram: @lacasitadeginger_</a></li>
+          <li><a href="https://www.tiktok.com/@lacasitadeginger" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 3c.5 3 2.5 5 5.5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> TikTok: @lacasitadeginger</a></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8z" fill="currentColor"/></svg> Facebook: pendiente de confirmar</li>
+          <li><a href="https://wa.me/56966292613" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg> WhatsApp</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="titulo-pie-contacto">
+        <h2 id="titulo-pie-contacto">Encuéntranos</h2>
+        <address>
+          Yungay 95, esquina Iquique,<br>
+          Chillán, Región de Ñuble, Chile.<br>
+          <a href="mailto:Fabiola.Avendano@gmail.com">Fabiola.Avendano@gmail.com</a>
+        </address>
+      </section>
+    </div>
+    <p class="pie-legal"><small>&copy; <span id="anio">2026</span> La Casita de Ginger · Fabiola y Alejandro · Chillán, Chile.</small> · <a href="index.html#inicio">Volver al inicio</a></p>
+  </footer>
+
+</body>
+</html>

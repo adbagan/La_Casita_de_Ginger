@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La Casita de Ginger: pastelería temática en Chillán donde la Navidad se vive todo el año. Tortas, galletas, pastelería y preparaciones tradicionales chilenas.">
+  <meta name="keywords" content="pastelería, Chillán, Navidad, galletas de jengibre, tortas, repostería artesanal, Ñuble">
+  <meta name="author" content="La Casita de Ginger">
+  <meta name="theme-color" content="#482109">
+  <title>La Casita de Ginger | Donde la Navidad se vive todo el año</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Mountains+of+Christmas:wght@700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Template Agency (Start Bootstrap, licencia MIT): incluye Bootstrap 5.2.3 -->
+  <link rel="stylesheet" href="css/agency.css">
+  <!-- Estilos de La Casita de Ginger (Evaluaciones N°1 y N°2) adaptados al template -->
+  <link rel="stylesheet" href="css/ginger.css">
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/agency.js" defer></script>
+  <script src="js/productos.js" defer></script>
+  <script src="js/catalogo-datos.js" defer></script>
+  <script src="js/almacen-catalogo.js" defer></script>
+  <script src="js/guia-despacho.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body id="page-top">
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===================== MENÚ (navbar del template Agency) ===================== -->
+  <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNav" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand marca" href="#inicio">
+        <img src="img/logo.png" alt="Logo de La Casita de Ginger" width="56" height="56">
+        <span class="marca-texto">
+          <span class="marca-nombre">La Casita de Ginger</span>
+          <span class="marca-lema">Donde la Navidad se vive todo el año</span>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Abrir o cerrar el menú">
+        Menú <span aria-hidden="true">☰</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto py-3 py-xl-0" id="menu-principal">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#visitanos">Visítanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="cargar-producto.html">Cargar producto</a></li>
+            <li class="nav-item"><a class="nav-link boton-carrito" id="abrir-carrito" href="#carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido">
+
+    <!-- ===================== INICIO ===================== -->
+    <section id="inicio" class="masthead hero" aria-labelledby="titulo-inicio">
+      <div class="container hero-grid">
+        <div class="hero-texto">
+          <p class="etiqueta masthead-subheading">Pastelería artesanal · Chillán</p>
+          <h1 id="titulo-inicio" class="masthead-heading">Bienvenidos a La Casita de Ginger</h1>
+          <p class="lema">¡Donde la Navidad se vive todo el año!</p>
+          <p>Imagina entrar a una casita de jengibre, rodearte de detalles navideños, escuchar la música de la Navidad y disfrutar de algo delicioso. Ese es el mundo de La Casita de Ginger: un rincón mágico en Chillán donde la dulzura, la fantasía y la calidez se encuentran durante los 365 días del año.</p>
+          <p>Ven a conocernos, descubre nuestras delicias y déjate envolver por una experiencia que te hará sentir que la Navidad nunca termina.</p>
+          <p class="acciones">
+            <a class="btn btn-primary btn-xl" href="productos.html">Ver productos</a>
+            <a class="btn btn-outline-primary btn-xl" href="#visitanos">Cómo llegar</a>
+          </p>
+        </div>
+
+        <figure class="portada">
+          <img src="img/portada.png" alt="Emblema de La Casita de Ginger: galleta de jengibre sonriente, Chillán - Chile" width="480" height="480">
+          <figcaption>Entra a nuestra casita de jengibre en Chillán.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== GINGER ===================== -->
+    <section id="ginger" class="page-section seccion seccion-ginger" aria-labelledby="titulo-ginger">
+      <div class="container">
+        <article class="ginger-tarjeta">
+          <figure class="ginger-figura">
+            <img src="img/ginger.png" alt="Ginger, la galletita de jengibre con bufanda roja y botones de colores" width="270" height="300">
+            <figcaption>Ginger, la galletita de jengibre.</figcaption>
+          </figure>
+          <div class="ginger-texto">
+            <p class="etiqueta">Nuestro personaje estrella</p>
+            <h2 id="titulo-ginger" class="section-heading">Conoce a Ginger</h2>
+            <blockquote class="globo">
+              <p>¡Hola! Soy Ginger, la galletita de jengibre que da vida a esta dulce aventura.</p>
+              <p>Mi hogar es La Casita de Ginger, un lugar donde siempre hay motivos para sonreír, compartir algo rico y disfrutar de la magia de la Navidad. Aquí, las luces, los adornos, la música navideña y los aromas dulces forman parte de nuestra historia durante todo el año.</p>
+              <p>Quiero darte la bienvenida a nuestro mundo, donde cada visita puede convertirse en un recuerdo inolvidable y cada delicia es una invitación a disfrutar de los pequeños placeres de la vida.</p>
+              <p><strong>¡Te esperamos en nuestra casita, donde la Navidad nunca termina!</strong></p>
+            </blockquote>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== QUIÉNES SOMOS ===================== -->
+    <section id="nosotros" class="page-section seccion" aria-labelledby="titulo-nosotros">
+      <div class="container">
+        <header class="seccion-cabecera">
+          <p class="etiqueta">Nuestra historia</p>
+          <h2 id="titulo-nosotros" class="section-heading">Quiénes somos</h2>
+        </header>
+        <div class="nosotros-texto">
+          <figure class="foto-equipo">
+            <img src="img/team.png" alt="Ilustración del equipo de La Casita de Ginger junto a la figura de Ginger, frente al local" width="577" height="565" loading="lazy">
+            <figcaption>Nuestro equipo junto a Ginger</figcaption>
+          </figure>
+            <p>Somos <strong>La Casita de Ginger</strong>, una pastelería temática ubicada en Chillán, inspirada en las tradicionales casitas de galletita navideña y en la magia, la alegría y la calidez de la Navidad.</p>
+            <p>Nuestra propuesta nace de una idea especial: <q>¿por qué esperar hasta diciembre para vivir la Navidad?</q> En nuestra casita, la Navidad está presente durante todo el año. Nuestra decoración, los detalles de cada rincón y la música navideña que acompaña a nuestros visitantes crean una atmósfera acogedora y mágica que invita a desconectarse de la rutina y volver a disfrutar de la ilusión de esta época tan especial.</p>
+            <p>En el corazón de nuestro mundo está Ginger, nuestra galletita de jengibre y personaje estrella de la marca. Ginger representa la dulzura, la alegría y el espíritu de nuestra casita.</p>
+            <p>Ofrecemos tortas, pastelería, galletas, preparaciones tradicionales chilenas y otras delicias elaboradas con dedicación. En La Casita de Ginger no solo vienes a comprar algo rico: vienes a vivir una experiencia y llevarte un poquito de magia navideña en cualquier época del año.</p>
+            <p>Atendemos presencialmente en nuestro local y también recibimos pedidos y consultas a través de nuestras redes sociales y WhatsApp.</p>
+        </div>
+
+        <div class="tarjetas-2">
+          <article id="mision" class="tarjeta">
+            <h3><span class="icono-navidad" aria-hidden="true">🎁</span> Misión</h3>
+            <p>Endulzar la vida de nuestros clientes a través de productos de pastelería y repostería artesanal y natural elaborados con dedicación, calidad y cariño, ofreciendo mucho más que sabores: una experiencia mágica que despierte emociones, recuerdos felices y el espíritu de compartir.</p>
+            <p>Queremos que cada persona que visite La Casita de Ginger sienta que entra a un pequeño mundo de fantasía, donde la Navidad nunca termina. A través de nuestra decoración navideña, la música característica de esta época, nuestros productos y la compañía de Ginger, buscamos regalar momentos únicos, llenos de dulzura, alegría y calidez.</p>
+          </article>
+          <article id="vision" class="tarjeta">
+            <h3><span class="icono-navidad" aria-hidden="true">🎄</span> Visión</h3>
+            <p>Convertirnos en una pastelería temática reconocida y querida en Chillán y sus alrededores, destacándonos no solo por la calidad y el sabor de nuestros productos, sino también por ofrecer una experiencia diferente, auténtica e inolvidable.</p>
+            <p>Queremos que La Casita de Ginger sea reconocida como ese lugar especial donde se puede vivir la magia de la Navidad durante los 365 días del año, un espacio que invite a las familias a compartir, disfrutar y crear recuerdos, y donde Ginger se convierta en un personaje entrañable para nuestros clientes.</p>
+            <p>Aspiramos a seguir creciendo, fortaleciendo nuestra identidad y llevando la magia de nuestra casita a más personas, tanto a través de nuestro local físico como de nuestros canales digitales.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CARRITO ===================== -->
+    <aside id="carrito" class="offcanvas offcanvas-end carrito" tabindex="-1" aria-labelledby="titulo-carrito">
+      <div class="offcanvas-body carrito-panel">
+        <header class="carrito-cabecera">
+          <h2 id="titulo-carrito">🛒 Carrito de compra</h2>
+          <button type="button" class="carrito-cerrar" id="cerrar-carrito" aria-label="Cerrar carrito" data-bs-dismiss="offcanvas">✕</button>
+        </header>
+        <ol class="pasos-pedido" id="pasos-pedido" aria-label="Pasos para solicitar tu pedido">
+          <li class="activo" data-paso="1"><span>1</span> Carrito</li>
+          <li data-paso="2"><span>2</span> Datos de despacho</li>
+          <li data-paso="3"><span>3</span> Envío por WhatsApp</li>
+        </ol>
+        <p id="carrito-vacio">Tu carrito está vacío. Agrega productos desde <a href="productos.html">Nuestros productos</a>.</p>
+        <table id="tabla-carrito" hidden>
+          <caption>Detalle de tu pedido</caption>
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Subtotal</th>
+              <th scope="col">Acción</th>
+            </tr>
+          </thead>
+          <tbody id="carrito-items"></tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="3">Total</th>
+              <td colspan="2"><strong id="carrito-total">$0</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+        <p class="carrito-acciones">
+          <button type="button" class="boton boton-secundario" id="vaciar-carrito">Vaciar carrito</button>
+          <button type="button" class="boton" id="haz-tu-pedido" aria-controls="form-pedido" aria-expanded="false">Solicitar pedido</button>
+        </p>
+
+        <form id="form-pedido" class="formulario form-pedido" hidden>
+          <fieldset>
+            <legend>Datos para la guía de despacho</legend>
+            <p class="campo">
+              <label for="pedido-nombre">Nombre completo</label>
+              <input type="text" id="pedido-nombre" name="nombre" required maxlength="60" autocomplete="name">
+            </p>
+            <p class="campo">
+              <label for="pedido-telefono">Teléfono</label>
+              <input type="tel" id="pedido-telefono" name="telefono" required maxlength="15" placeholder="+56 9 1234 5678" autocomplete="tel">
+            </p>
+            <p class="campo">
+              <label for="pedido-correo">Correo electrónico</label>
+              <input type="email" id="pedido-correo" name="correo" maxlength="60" autocomplete="email">
+            </p>
+            <fieldset class="opciones">
+              <legend>Tipo de entrega</legend>
+              <label><input type="radio" name="entrega" value="Despacho a domicilio" checked> Despacho a domicilio</label>
+              <label><input type="radio" name="entrega" value="Retiro en el local"> Retiro en el local (Yungay 95)</label>
+            </fieldset>
+            <p class="campo">
+              <label for="pedido-direccion">Dirección de despacho</label>
+              <input type="text" id="pedido-direccion" name="direccion" maxlength="80" placeholder="Calle, número, depto." autocomplete="street-address">
+            </p>
+            <p class="campo">
+              <label for="pedido-comuna">Comuna</label>
+              <select id="pedido-comuna" name="comuna">
+                <option>Chillán</option>
+                <option>Chillán Viejo</option>
+                <option>San Carlos</option>
+                <option>Bulnes</option>
+                <option>Coihueco</option>
+                <option>Pinto</option>
+              </select>
+            </p>
+            <p class="campo">
+              <label for="pedido-fecha">Fecha de entrega</label>
+              <input type="date" id="pedido-fecha" name="fecha" required>
+            </p>
+            <p class="campo">
+              <label for="pedido-horario">Horario</label>
+              <select id="pedido-horario" name="horario">
+                <option>10:00 a 13:00</option>
+                <option>13:00 a 16:00</option>
+                <option>16:00 a 19:00</option>
+              </select>
+            </p>
+            <p class="campo">
+              <label for="pedido-observaciones">Observaciones</label>
+              <textarea id="pedido-observaciones" name="observaciones" rows="3" cols="40" maxlength="200" placeholder="Ej: dedicatoria en la torta, timbre no funciona…"></textarea>
+            </p>
+            <p class="carrito-acciones">
+              <button type="submit" class="boton boton-whatsapp" id="enviar-pedido">Enviar pedido por WhatsApp</button>
+              <button type="button" class="boton boton-secundario" id="cancelar-pedido">Cancelar</button>
+            </p>
+          </fieldset>
+        </form>
+        <p id="mensaje-guia" class="mensaje-ok" role="status" hidden></p>
+        <p class="nota"><small>Al enviar el pedido se descarga la guía de despacho en PDF y se abre WhatsApp con el detalle para coordinar el pago y la entrega. En el celular, la guía se adjunta directamente al compartir por WhatsApp.</small></p>
+      </div>
+    </aside>
+
+    <!-- ===================== EXPERIENCIA ===================== -->
+    <section id="experiencia" class="page-section seccion seccion-oscura" aria-labelledby="titulo-experiencia">
+      <div class="container">
+        <div class="cielo-trineo" aria-hidden="true">
+          <div class="trineo">
+            <span class="estela"></span>
+            <img class="trineo-dibujo" src="img/navidad/trineo.svg" alt="" width="300" height="120">
+          </div>
+          <span class="copo c1">❄</span><span class="copo c2">❅</span><span class="copo c3">❄</span><span class="copo c4">❆</span><span class="copo c5">❄</span><span class="copo c6">❅</span><span class="copo c7">❆</span>
+          <div class="paisaje"></div>
+        </div>
+        <header class="seccion-cabecera">
+          <p class="etiqueta">365 días de magia</p>
+          <h2 id="titulo-experiencia" class="section-heading">Una experiencia navideña durante todo el año</h2>
+          <p>La Casita de Ginger es un lugar diferente. Nuestra ambientación temática, la decoración navideña y la música que acompaña cada jornada crean una experiencia que invita a disfrutar de la Navidad en cualquier mes del calendario.</p>
+          <p>Queremos que cada visita sea una pausa de alegría, un momento para compartir en familia y una oportunidad para recuperar esa ilusión tan especial que sentimos en Navidad.</p>
+        </header>
+        <ul class="caracteristicas">
+          <li><span class="icono" aria-hidden="true">🏠</span><h3>Decoración permanente</h3><p>Inspirada en las tradicionales casitas de jengibre.</p></li>
+          <li><span class="icono" aria-hidden="true">🎶</span><h3>Música navideña</h3><p>La banda sonora que acompaña cada visita.</p></li>
+          <li><span class="icono" aria-hidden="true">🍪</span><h3>Ginger, el anfitrión</h3><p>Nuestra galletita que da vida a la casita.</p></li>
+          <li><span class="icono" aria-hidden="true">🧁</span><h3>Artesanal y natural</h3><p>Pastelería elaborada con dedicación y cariño.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIOS ===================== -->
+    <section id="testimonios" class="page-section seccion" aria-labelledby="titulo-testimonios">
+      <div class="container">
+        <header class="seccion-cabecera">
+          <p class="etiqueta">Lo que dicen nuestros visitantes</p>
+          <h2 id="titulo-testimonios" class="section-heading">Testimonios</h2>
+          <p>Queremos compartir las experiencias y opiniones de quienes han visitado nuestra casita y disfrutado de nuestros productos: la combinación de sabores, atención cercana y una experiencia navideña única durante todo el año.</p>
+        </header>
+        <div class="barra-testimonios">
+          <p id="promedio-testimonios" class="promedio" hidden></p>
+          <button type="button" class="boton" id="abrir-testimonio" aria-haspopup="dialog" aria-controls="modal-testimonio">✍️ Agregar testimonio</button>
+        </div>
+        <div id="sin-testimonios" class="sin-productos" role="status">
+          <p class="sin-productos-titulo">Aún no hay testimonios</p>
+          <p>¿Ya nos visitaste? Cuéntanos tu experiencia con el botón «Agregar testimonio».</p>
+        </div>
+        <ul id="lista-testimonios" class="tarjetas-3 lista-testimonios" aria-label="Testimonios, 3 por página, del más reciente al más antiguo" hidden></ul>
+        <nav class="paginacion" id="paginacion-testimonios" aria-label="Páginas de testimonios" hidden>
+          <button type="button" id="testimonios-anterior" aria-label="Testimonios anteriores">&larr; Anterior</button>
+          <span id="testimonios-pagina" class="indicador-pagina" aria-live="polite">Página 1 de 1</span>
+          <button type="button" id="testimonios-siguiente" aria-label="Testimonios siguientes">Siguiente &rarr;</button>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ===================== VISÍTANOS ===================== -->
+    <section id="visitanos" class="page-section seccion seccion-crema" aria-labelledby="titulo-visitanos">
+      <div class="container dos-columnas centrado">
+        <div>
+          <p class="etiqueta">Te esperamos</p>
+          <h2 id="titulo-visitanos" class="section-heading">Ven a visitarnos</h2>
+          <p>Nuestra casita te espera en Chillán para que disfrutes de nuestras preparaciones y conozcas un espacio lleno de encanto, dulzura y espíritu navideño.</p>
+          <address class="tarjeta direccion">
+            <strong>📍 Dirección</strong><br>
+            Yungay 95, esquina Iquique,<br>
+            Chillán, Región de Ñuble, Chile.
+          </address>
+          <p><a class="boton" href="https://www.google.com/maps/place/Yungay+95,+3810216+Chill%C3%A1n,+%C3%91uble/@-36.6026121,-72.0885821,18z/data=!4m15!1m8!3m7!1s0x9668d62bde1666a7:0xc4180801af2ac24b!2sYungay+95,+3810216+Chill%C3%A1n,+%C3%91uble!3b1!8m2!3d-36.6026961!4d-72.0885901!16s%2Fg%2F11lyps9l3c!3m5!1s0x9668d62bde1666a7:0xc4180801af2ac24b!8m2!3d-36.6026961!4d-72.0885901!16s%2Fg%2F11lyps9l3c?entry=ttu&amp;g_ep=EgoyMDI2MTEwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Cómo llegar</a></p>
+        </div>
+        <iframe class="mapa" src="https://www.google.com/maps?q=-36.6026961,-72.0885901&amp;z=17&amp;output=embed" width="600" height="350" title="Mapa de ubicación de La Casita de Ginger en Chillán" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section id="contacto" class="page-section seccion" aria-labelledby="titulo-contacto">
+      <div class="container dos-columnas">
+        <div class="contacto-info">
+          <p class="etiqueta">Estamos para ayudarte</p>
+          <h2 id="titulo-contacto" class="section-heading">Contacto</h2>
+          <p>¿Tienes dudas sobre un producto, quieres una torta personalizada o coordinar un pedido especial? Envíanos tu consulta y te responderemos por correo.</p>
+          <p class="tarjeta como-comprar"><strong>¿Cómo comprar?</strong> Agrega tus productos al <a href="#carrito" class="abrir-carrito-enlace">carrito</a>, presiona «Solicitar pedido», completa los datos de despacho y envía tu pedido por WhatsApp.</p>
+          <p>Correo: <a href="mailto:Fabiola.Avendano@gmail.com">Fabiola.Avendano@gmail.com</a></p>
+        </div>
+        <form class="formulario tarjeta" id="form-consulta" action="mailto:Fabiola.Avendano@gmail.com" method="post" enctype="text/plain">
+          <fieldset>
+            <legend>Envíanos tu consulta</legend>
+            <p class="campo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required autocomplete="name">
+            </p>
+            <p class="campo">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" required autocomplete="email">
+            </p>
+            <p class="campo">
+              <label for="motivo">Motivo</label>
+              <select id="motivo" name="motivo">
+                <option>Consulta de productos</option>
+                <option>Pedido especial / torta personalizada</option>
+                <option>Otro</option>
+              </select>
+            </p>
+            <p class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+            </p>
+            <button type="submit" class="boton">Enviar consulta</button>
+            <p class="mensaje-guia" id="mensaje-consulta" role="status" hidden></p>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== MODAL: AGREGAR TESTIMONIO ===================== -->
+  <div class="modal fade" id="modal-testimonio" tabindex="-1" aria-labelledby="titulo-modal-testimonio" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-content ventana">
+    <header class="modal-cabecera">
+      <h2 id="titulo-modal-testimonio">Agregar testimonio</h2>
+      <button type="button" class="modal-cerrar" id="cerrar-testimonio" aria-label="Cerrar" data-bs-dismiss="modal">✕</button>
+    </header>
+    <div class="modal-body p-0">
+    <form id="form-testimonio" class="formulario form-testimonio">
+      <p>Cuéntanos cómo fue tu visita a La Casita de Ginger. Tu testimonio aparecerá en la sección «Testimonios», ordenado por fecha.</p>
+      <p class="campo">
+        <label for="testimonio-nombre">Nombre *</label>
+        <input type="text" id="testimonio-nombre" name="nombre" required maxlength="40" autocomplete="name">
+      </p>
+      <p class="campo">
+        <label for="testimonio-comuna">Comuna</label>
+        <input type="text" id="testimonio-comuna" name="comuna" maxlength="40" placeholder="Ej: Chillán">
+      </p>
+      <p class="campo">
+        <label for="testimonio-fecha">Fecha de la visita *</label>
+        <input type="date" id="testimonio-fecha" name="fecha" required>
+      </p>
+      <fieldset class="puntuacion">
+        <legend>Puntuación * <small>(máximo 5 estrellas)</small></legend>
+        <div class="estrellas-entrada">
+          <input type="radio" id="estrella-5" name="puntuacion" value="5" required>
+          <label for="estrella-5" title="5 de 5 estrellas"><span class="solo-lectores">5 estrellas</span></label>
+          <input type="radio" id="estrella-4" name="puntuacion" value="4">
+          <label for="estrella-4" title="4 de 5 estrellas"><span class="solo-lectores">4 estrellas</span></label>
+          <input type="radio" id="estrella-3" name="puntuacion" value="3">
+          <label for="estrella-3" title="3 de 5 estrellas"><span class="solo-lectores">3 estrellas</span></label>
+          <input type="radio" id="estrella-2" name="puntuacion" value="2">
+          <label for="estrella-2" title="2 de 5 estrellas"><span class="solo-lectores">2 estrellas</span></label>
+          <input type="radio" id="estrella-1" name="puntuacion" value="1">
+          <label for="estrella-1" title="1 de 5 estrellas"><span class="solo-lectores">1 estrella</span></label>
+        </div>
+        <p id="texto-puntuacion" class="texto-puntuacion" aria-live="polite">Elige de 1 a 5 estrellas.</p>
+      </fieldset>
+      <p class="campo">
+        <label for="testimonio-texto">Testimonio *</label>
+        <textarea id="testimonio-texto" name="texto" rows="4" required maxlength="300"></textarea>
+      </p>
+      <p class="campo-botones">
+        <button type="submit" class="boton">Publicar testimonio</button>
+        <button type="button" class="boton boton-secundario" id="cancelar-testimonio">Cancelar</button>
+      </p>
+      <p class="nota"><small>Los testimonios se guardan en este navegador (demostración sin servidor).</small></p>
+    </form>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="pie">
+    <div class="container pie-grid">
+      <section aria-labelledby="titulo-pie-marca">
+        <h2 id="titulo-pie-marca" class="pie-marca">
+          <img src="img/logo.png" alt="" width="48" height="48"> La Casita de Ginger
+        </h2>
+        <p>Pastelería temática donde la Navidad se vive todo el año.</p>
+      </section>
+      <section aria-labelledby="titulo-redes">
+        <h2 id="titulo-redes">Síguenos en redes sociales</h2>
+        <ul class="redes">
+          <li><a href="https://www.instagram.com/lacasitadeginger_/" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg> Instagram: @lacasitadeginger_</a></li>
+          <li><a href="https://www.tiktok.com/@lacasitadeginger" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 3c.5 3 2.5 5 5.5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> TikTok: @lacasitadeginger</a></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8z" fill="currentColor"/></svg> Facebook: pendiente de confirmar</li>
+          <li><a href="https://wa.me/56966292613" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg> WhatsApp</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="titulo-pie-contacto">
+        <h2 id="titulo-pie-contacto">Encuéntranos</h2>
+        <address>
+          Yungay 95, esquina Iquique,<br>
+          Chillán, Región de Ñuble, Chile.<br>
+          <a href="mailto:Fabiola.Avendano@gmail.com">Fabiola.Avendano@gmail.com</a>
+        </address>
+      </section>
+    </div>
+    <p class="pie-legal"><small>&copy; <span id="anio">2026</span> La Casita de Ginger · Fabiola y Alejandro · Chillán, Chile.</small> · <a href="#inicio">Volver arriba &uarr;</a></p>
+  </footer>
+
+</body>
+</html>
