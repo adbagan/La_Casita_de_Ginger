@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | 🌐 **Sitio en Netlify** | **[PENDIENTE: pegar aquí la URL de Netlify]** |
-| 📁 **Repositorio** | **[PENDIENTE: pegar aquí la URL de GitHub]** |
+| 📁 **Repositorio** | **[https://github.com/adbagan/La_Casita_de_Ginger](https://github.com/adbagan/La_Casita_de_Ginger)** |
 | 🎓 **Asignatura** | Diseño Web · 2026-4B-DISEÑO WEB/400-CED-QM · IPLA |
 | 👤 **Integrante** | Adán González Barragán |
 | 👩‍🏫 **Docente** | Carolina Desiree Tapia Bahamonde |
